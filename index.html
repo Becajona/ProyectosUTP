@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Vega – Proyectos de mi último cuatrimestre</title>
+    <!-- Core stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-wrapper">
+        <div class="logo">Jonathan Vega</div>
+        <nav class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#ahorraton">Ahorratón</a></li>
+            <li><a href="#tp2d">Tiempo Prestado 2D</a></li>
+            <li><a href="#tphorror">Tiempo Prestado Horror</a></li>
+            <li><a href="#timeline">Línea de tiempo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="burger" id="burger">
+          &#9776;
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <h1>Jonathan Vega Gómez</h1>
+        <p class="subtitle">
+          Desarrollador de software – Último cuatrimestre en la UTP
+        </p>
+        <p class="hero-text">
+          3 proyectos, muchos retos, un solo objetivo: aprender haciendo.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="#ahorraton"
+            class="btn btn-primary"
+            >Ver Ahorratón</a
+          >
+          <a href="#tp2d" class="btn btn-secondary">Ver Tiempo Prestado</a>
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">+16</span>
+            <span class="stat-label">Semanas de desarrollo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Bugs arreglados</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobremi" class="about">
+      <div class="container">
+        <h2>Sobre mí y este cuatrimestre</h2>
+        <p>
+          ¡Hola! Soy <strong>Jonathan Vega Gómez</strong>, estudiante de Ingeniería
+          en Desarrollo y Gestión de Software de la Universidad Tecnológica de
+          Puebla. Para cerrar mi último cuatrimestre decidí retarme a mí mismo
+          desarrollando y lanzando productos reales: una aplicación móvil
+          publicada en Google Play y dos videojuegos en Unity. Esta página
+          reúne esa aventura, los aprendizajes obtenidos y las horas de
+          experimentación detrás de cada proyecto.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project: Ahorratón -->
+    <section id="ahorraton" class="project">
+      <div class="container">
+        <h2>Proyecto 1 – Ahorratón</h2>
+        <p class="project-tagline">
+          App móvil de ahorro personal para estudiantes y trabajadores
+        </p>
+        <div class="project-content">
+          <div class="project-text">
+            <h3>Descripción</h3>
+            <p>
+              Ahorratón es una aplicación móvil pensada para ayudar a personas
+              con ingresos quincenales a gestionar sus gastos y ahorrar de
+              forma inteligente. Incluye módulos para registrar gastos fijos,
+              ajustar metas de ahorro, simular quincenas, revisar el
+              historial y cerrar el periodo de ahorros. La idea surgió de la
+              necesidad de ordenar mis finanzas como estudiante y terminó
+              convirtiéndose en una herramienta útil para compañeros y
+              colegas.
+            </p>
+            <h3>Retos y aprendizajes</h3>
+            <ul>
+              <li>Diseñar una arquitectura en Flutter con gestión de estados.</li>
+              <li>Integrar Firebase/NestJS para autenticación y base de datos.</li>
+              <li>Preparar la firma digital y cumplir las políticas de Google Play.</li>
+              <li>
+                Resolver rechazos iniciales en la publicación (credenciales de
+                prueba, políticas de privacidad) hasta lograr la aprobación.
+              </li>
+            </ul>
+            <h3>Tiempo de desarrollo</h3>
+            <p>
+              Este proyecto se desarrolló durante aproximadamente 8 semanas,
+              desde la concepción del diseño hasta la publicación en la
+              tienda.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://play.google.com/store/apps/details?id=ahorraton.com&hl=es_MX"
+                class="btn btn-primary"
+                target="_blank"
+                >Abrir en Play Store</a
+              >
+              <a
+                href=""class="btn btn-primary"target="_blank"
+                >Descargar APK</a>
+              <a
+                href="#"
+                class="btn btn-secondary"
+                >Ver código en GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project: Tiempo Prestado 2D -->
+    <section id="tp2d" class="project alt">
+      <div class="container">
+        <h2>Proyecto 2 – Tiempo Prestado (Prototipo 2D)</h2>
+        <p class="project-tagline">
+          Juego 2D de plataformas para practicar mecánicas básicas
+        </p>
+        <div class="project-content">
+          <div class="project-text">
+            <h3>Descripción</h3>
+            <p>
+              Este prototipo fue mi primer acercamiento a Unity. Se trata de un
+              juego sencillo de plataformas en el que el jugador puede caminar,
+              saltar y llegar al final del nivel para cambiar de escena. Aquí
+              aprendí a controlar físicas 2D, animaciones básicas (idle,
+              caminar, salto) y el manejo de transiciones entre escenas.
+            </p>
+            <h3>Aprendizajes clave</h3>
+            <ul>
+              <li>Movimientos del jugador y detección de colisiones.</li>
+              <li>Creación de animaciones básicas en Unity.</li>
+              <li>Implementación de escenas y cambios de niveles.</li>
+            </ul>
+            <div class="project-buttons">
+              <a href="TiempoPrestado.apk" class="btn btn-primary">Descargar demo</a>
+              <a href="#" class="btn btn-secondary">Ver gameplay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project: Tiempo Prestado Horror -->
+    <section id="tphorror" class="project">
+      <div class="container">
+        <h2>Proyecto 3 – Tiempo Prestado (Horror / Turno nocturno)</h2>
+        <p class="project-tagline">
+          Videojuego 2D de suspenso en un restaurante nocturno
+        </p>
+        <div class="project-content">
+          <div class="project-text">
+            <h3>Descripción</h3>
+            <p>
+              Esta versión ampliada de Tiempo Prestado es un videojuego 2D en
+              Unity con un tono de horror. Controlas a un trabajador en un
+              restaurante nocturno realizando tareas como cocinar, limpiar y
+              revisar la energía del local, mientras enfrentas eventos
+              inesperados. Cuenta con un HUD completo (reloj, energía,
+              tareas), estados del juego (jugando, finalizado, game over) y
+              múltiples interacciones con el entorno.
+            </p>
+            <h3>Retos del desarrollo</h3>
+            <ul>
+              <li>Configurar Cinemachine 2D para una cámara suave.</li>
+              <li>Manejar estados complejos del juego y transición entre escenas.</li>
+              <li>Diseñar un HUD que mostrara información vital de manera clara.</li>
+              <li>Solucionar errores de animación, referencias nulas y bugs diversos.</li>
+            </ul>
+            <div class="project-buttons">
+              <a href="#" class="btn btn-primary">Probar demo</a>
+              <a href="#" class="btn btn-secondary">Ver gameplay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <h2>Línea de tiempo del cuatrimestre</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">Oct 2025</span>
+              <h3>Primer prototipo de Tiempo Prestado</h3>
+              <p>Empecé con un juego 2D sencillo para aprender las bases de Unity.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">Oct 2025</span>
+              <h3>Inicio de Ahorratón</h3>
+              <p>Diseño del MVP y primeros módulos (inicio, gastos, simulador).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2025</span>
+              <h3>Ahorratón funcional</h3>
+              <p>Integré la base de datos, autenticación y pruebas de usuarios.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2025</span>
+              <h3>Tiempo Prestado Horror – Noche 1</h3>
+              <p>Se completó la primera noche del juego con HUD y tareas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2025</span>
+              <h3>Publicación de Ahorratón</h3>
+              <p>
+                Después de varias correcciones, la app fue aprobada y
+                publicada en Google Play.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Learnings Section -->
+    <section class="stats-section">
+      <div class="container">
+        <h2>Retos, aprendizajes y estadísticas</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Retos técnicos</h3>
+            <ul>
+              <li>
+                Publicar la app en Play Store: firma, políticas y credenciales
+                de prueba.
+              </li>
+              <li>Manejo de estados complejos en Flutter y Unity.</li>
+              <li>Depuración de errores difíciles de replicar.</li>
+            </ul>
+          </div>
+          <div class="stat-card">
+            <h3>Retos personales</h3>
+            <ul>
+              <li>Equilibrar universidad, proyectos y vida personal.</li>
+              <li>Trabajar bajo fechas de entrega y ferias de proyectos.</li>
+            </ul>
+          </div>
+          <div class="stat-card">
+            <h3>Aprendizajes clave</h3>
+            <ul>
+              <li>La documentación oficial es tu amiga.</li>
+              <li>Probar como usuario final evita sorpresas en producción.</li>
+              <li>
+                Publicar algo real enseña más que muchos ejercicios teóricos.
+              </li>
+            </ul>
+          </div>
+          <div class="stat-card stats-numbers">
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">7</span>
+              <span class="stat-label">Escenas en Unity</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">9</span>
+              <span class="stat-label">Pantallas en Ahorratón</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">16</span>
+              <span class="stat-label">Semanas de trabajo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="tech-section">
+      <div class="container">
+        <h2>Tecnologías usadas</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <h3>Flutter</h3>
+            <p>Framework para el desarrollo de la app móvil.</p>
+          </div>
+          <div class="tech-item">
+            <h3>Firebase / NestJS</h3>
+            <p>Backend con autenticación y almacenamiento de datos.</p>
+          </div>
+          <div class="tech-item">
+            <h3>Unity 2D</h3>
+            <p>Motor utilizado para ambos videojuegos.</p>
+          </div>
+          <div class="tech-item">
+            <h3>Git & GitHub</h3>
+            <p>Control de versiones y colaboración.</p>
+          </div>
+          <div class="tech-item">
+            <h3>Figma</h3>
+            <p>Prototipado y diseño de interfaces.</p>
+          </div>
+          <div class="tech-item">
+            <h3>Google Play Console</h3>
+            <p>Plataforma de publicación y pruebas de la app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+          <h2>Contacto</h2>
+          <p>
+            Si llegaste hasta aquí, ¡gracias por tomarte el tiempo de revisar
+            mis proyectos! Si deseas probar las apps, dar feedback o
+            colaborar en futuros proyectos, contáctame a través de:
+          </p>
+          <div class="contact-info">
+            <p><strong>Correo:</strong> <a href="mailto:jonathan@example.com">jonathan@example.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/">github.com/</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/">linkedin.com/</a></p>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://play.google.com/store/apps/details?id=ahorraton.com&hl=es_MX" class="btn btn-primary" target="_blank">Probar Ahorratón</a>
+            <a href="TiempoPrestado.apk" class="btn btn-outline">Descargar videojuego</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Jonathan Vega – Hecho con 💛 desde la UTP.</p>
+        <p class="quote">“Aprendí más haciendo esto que en muchos exámenes.”</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
